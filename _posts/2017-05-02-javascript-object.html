@@ -1,0 +1,26 @@
+---
+layout: default
+title: javascript 对象
+---
+<h2>{{ page.title }}</h2>
+<p class="small">{{ page.date | date: "%Y-%m-%d" }}</p>
+<hr>
+<h3>创建 JavaScript 对象：</h3>
+<p>1.创建直接的实例</p>
+var obj = new Object();
+obj.propertyName = value;
+<p>这个例子创建了对象的一个新实例，并向其添加了一个属性，propertyName是属性名，value是属性值</p>
+<p>2.字面量定义</p>
+var obj = {
+    propertyName: value
+}
+<p>直接定义了一个变量，变量属性propertyName,值value</p>
+<p>3.使用对象构造器</p>
+function Person(name, age){
+    this.name = name;
+    this.age = age;
+}
+<p>本例使用函数来构造对象,创建 JavaScript 对象实例:</p>
+var me = new Person("whl", 30);
+
+<p>待续...</p>
