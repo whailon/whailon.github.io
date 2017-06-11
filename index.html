@@ -4,19 +4,14 @@ title: the slow need to start early
 ---
 <div class="container">
   <h2>{{ page.title }}</h2>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <div class="panel panel-default">
-          <div class="panel-heading"><h4>{{ post.title }}</h4><small>{{ post.date | date: "%Y-%m-%d" }}</small></div>
-          <div class="panel-body">
-            {{ post.content }}
-          </div>
-          <div class="panel-footer">
-            <a href="{{ site.baseurl }}{{ post.url }}">查看</a>
-          </div>
-        </div>
-      </li>  
-    {% endfor %}
-  </ul>
+  {% for post in site.posts %}
+    <div class="panel panel-default">
+      <div class="panel-body">
+        {{ post.content }}
+      </div>
+      <div class="panel-footer">
+        <a href="{{ site.baseurl }}{{ post.url }}">查看</a>
+      </div>
+    </div>
+  {% endfor %}
 </div>
