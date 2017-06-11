@@ -1,13 +1,22 @@
 ---
 layout: default
-title: Blog
+title: the slow need to start early
 ---
-<div class="content">
+<div class="container">
   <h2>{{ page.title }}</h2>
-  <p>最新文章</p>
-  <ul class="list-group">
+  <ul>
     {% for post in site.posts %}
-      <li class="list-group-item">{{ post.date | date: "%Y-%m-%d" }}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      <li>
+        <div class="panel panel-default">
+          <div class="panel-heading"><h4>{{ post.title }}</h4><small>{{ post.date | date: "%Y-%m-%d" }}</small></div>
+          <div class="panel-body">
+            {{ post.content }}
+          </div>
+          <div class="panel-footer">
+            <a href="{{ site.baseurl }}{{ post.url }}">查看</a>
+          </div>
+        </div>
+      </li>  
     {% endfor %}
   </ul>
 </div>
