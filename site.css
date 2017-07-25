@@ -1,3 +1,7 @@
+.container {
+  width: 970px !important;
+}
+
 .panel .panel-body {
   height: 175px;
   overflow: hidden;
