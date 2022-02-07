@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>滚动加载 · GitBook</title>
+        <title>node设置设置淘宝镜像 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="issue-2.html" />
+    <link rel="next" href="issue-4.html" />
     
     
-    <link rel="prev" href="issue-4.html" />
+    <link rel="prev" href="issue-6.html" />
     
 
     </head>
@@ -149,7 +149,7 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="issue-5.html">
+        <li class="chapter active" data-level="4.1" data-path="issue-5.html">
             
                 <a href="issue-5.html">
             
@@ -189,7 +189,7 @@
         
         
     
-        <li class="chapter active" data-level="6.1" data-path="issue-3.html">
+        <li class="chapter " data-level="6.1" data-path="issue-3.html">
             
                 <a href="issue-3.html">
             
@@ -265,7 +265,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >滚动加载</a>
+        <a href=".." >node设置设置淘宝镜像</a>
     </h1>
 </div>
 
@@ -280,29 +280,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x6EDA;&#x52A8;&#x52A0;&#x8F7D;">&#x6EDA;&#x52A8;&#x52A0;&#x8F7D;</h1>
-<h2 id="2017-05-11">2017-05-11</h2>
-<p>&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x8C03;&#x6574;&#x4E0B;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x9AD8;&#x5EA6;&#xFF0C;&#x8BA9;&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x6EDA;&#x52A8;&#x3002;
-&#x5148;&#x4E86;&#x89E3;&#x4E09;&#x4E2A;&#x53D8;&#x91CF;</p>
-<blockquote>
-<ul>
-<li>document.body.scrollTop &#x6EDA;&#x52A8;&#x6761;&#x6EDA;&#x52A8;&#x7684;&#x8DDD;&#x79BB;</li>
-<li>window.innerHeight &#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x9AD8;&#x5EA6;</li>
-<li>document.body.clientHeight &#x5185;&#x5BB9;&#x9AD8;&#x5EA6;</li>
-</ul>
-<p>&#x539F;&#x7406;&#xFF1A;&#x5F53;&#x6EDA;&#x52A8;&#x6761;&#x6EDA;&#x52A8;&#x8DDD;&#x79BB; + &#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x9AD8;&#x5EA6; &gt;= &#x5185;&#x5BB9;&#x9AD8;&#x5EA6; &#x89E6;&#x53D1;&#x52A0;&#x8F7D;&#x6570;&#x636E;</p>
-</blockquote>
-<pre><code class="lang-python">  document.addEventListener(<span class="hljs-string">&apos;scroll&apos;</span>, function () {
-    var scrollTop = document.body.scrollTop
-    <span class="hljs-keyword">if</span>(scrollTop + window.innerHeight &gt;= document.body.clientHeight) {
-      // &#x89E6;&#x53D1;&#x52A0;&#x8F7D;&#x6570;&#x636E;
-      loadMore()
-    }
-  })
-  function loadMore () {
-    // todo
-  }
-</code></pre>
+                                <h1 id="node&#x8BBE;&#x7F6E;&#x8BBE;&#x7F6E;&#x6DD8;&#x5B9D;&#x955C;&#x50CF;">node&#x8BBE;&#x7F6E;&#x8BBE;&#x7F6E;&#x6DD8;&#x5B9D;&#x955C;&#x50CF;</h1>
+<h2 id="2017-08-05">2017-08-05</h2>
+<p>&#x6700;&#x8FD1;&#x4E00;&#x76F4;&#x9047;&#x5230;npm install &#x62A5;&#x9519;&#xFF0C;&#x62A5;&#x9519;&#x4FE1;&#x606F;&#x663E;&#x793A;&#x4E0E;phantomjs&#x6709;&#x5173;
+&#x4E8E;&#x662F;&#x4E0A;&#x767E;&#x5EA6;&#x67E5;&#x627E;&#x597D;&#x591A;&#xFF0C;&#x6709;&#x4F7F;&#x7528;cnpm&#x5B89;&#x88C5;&#x7684;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x5B83;&#x662F;&#x600E;&#x4E48;&#x6210;&#x529F;&#x7684;
+&#x53CD;&#x6B63;&#x6211;&#x662F;&#x6CA1;&#x6210;&#x529F;&#xFF0C;&#x5E94;&#x8BE5;&#x662F;&#x8FD9;&#x4E2A;&#x7EC4;&#x4EF6;&#x6BD4;&#x8F83;&#x5927;&#x94FE;&#x63A5;&#x8D85;&#x65F6;&#x4E86;&#x90FD;&#x3002;&#x6240;&#x4EE5;&#x770B;&#x5230;&#x9519;&#x8BEF;&#x63D0;&#x793A;
+&#x663E;&#x793A;&#x5728;
+<code>phthon
+C:\Users\Administrator\AppData\Local\Temp\phantomjs</code> &#x65E0;&#x6CD5;&#x627E;&#x5230;&#x538B;&#x7F29;&#x5305;
+ok,&#x76F4;&#x63A5;&#x4ECE;github&#x4E0A;&#x9762;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x538B;&#x7F29;&#x5305;&#xFF0C;&#x4E0B;&#x8F7D;&#x540E;&#x628A;&#x538B;&#x7F29;&#x5305;&#x590D;&#x5236;&#x5230;&#x6539;&#x76EE;&#x5F55;&#x4E0B;
+&#x7136;&#x540E;&#x5728;npm install &#xFF0C;ok &#x6210;&#x529F;&#x4E86;</p>
 
                                 
                                 </section>
@@ -330,12 +317,12 @@
 
             
                 
-                <a href="issue-4.html" class="navigation navigation-prev " aria-label="Previous page: yii2 框架GridView使用小技巧">
+                <a href="issue-6.html" class="navigation navigation-prev " aria-label="Previous page: yii2框架使用局部刷新表格分页问题解决">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="issue-2.html" class="navigation navigation-next " aria-label="Next page: javascript 对象">
+                <a href="issue-4.html" class="navigation navigation-next " aria-label="Next page: yii2 框架GridView使用小技巧">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -346,7 +333,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"滚动加载","level":"6.1","depth":1,"next":{"title":"javascript 对象","level":"6.2","depth":1,"path":"_posts/issue-2.md","ref":"_posts/issue-2.md","articles":[]},"previous":{"title":"yii2 框架GridView使用小技巧","level":"5.1","depth":1,"path":"_posts/issue-4.md","ref":"_posts/issue-4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_posts/issue-3.md","mtime":"2022-02-07T03:47:03.619Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-07T03:58:42.610Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"node设置设置淘宝镜像","level":"4.1","depth":1,"next":{"title":"yii2 框架GridView使用小技巧","level":"5.1","depth":1,"path":"_posts/issue-4.md","ref":"_posts/issue-4.md","articles":[]},"previous":{"title":"yii2框架使用局部刷新表格分页问题解决","level":"3.1","depth":1,"path":"_posts/issue-6.md","ref":"_posts/issue-6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"_posts/issue-5.md","mtime":"2022-02-07T05:12:20.245Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-07T05:15:12.112Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
