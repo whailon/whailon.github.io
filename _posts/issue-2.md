@@ -1,19 +1,15 @@
----
-layout: default
-title: javascript 对象
----
-#### {{ page.title }}
-{{ page.date | date: "%Y-%m-%d" }}
+# javascript 对象
+2017-05-02
 ------
 
-##### 1.创建直接的实例
+## 1.创建直接的实例
 ```python
 var obj = new Object();
 obj.propertyName = value;
 ```
 这个例子创建了对象的一个新实例，并向其添加了一个属性，propertyName是属性名，value是属性值
 
-##### 2.字面量定义
+## 2.字面量定义
 ```python
 var obj = {
     propertyName: value
@@ -21,7 +17,7 @@ var obj = {
 ```
 直接定义了一个变量，变量属性propertyName,值value
 
-##### 3.使用对象构造器
+## 3.使用对象构造器
 ```python
 function Person(name, age){
     this.name = name;

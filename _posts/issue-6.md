@@ -1,9 +1,6 @@
----
-layout: default
-title: yii2框架使用局部刷新表格分页问题解决
----
-#### {{ page.title }}
-{{ page.date | date: "%Y-%m-%d" }}
+# yii2框架使用局部刷新表格分页问题解决
+2017-09-02
+------
 
 使用pjax局部刷新，首先使用的是jquery.form.js中的表单异步提交
 任务要求使用modal弹窗，表单异步提交，后台返回要替换的数据。在

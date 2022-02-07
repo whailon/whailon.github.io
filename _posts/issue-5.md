@@ -1,9 +1,5 @@
----
-layout: default
-title: node设置设置淘宝镜像
----
-#### {{ page.title }}
-{{ page.date | date: "%Y-%m-%d" }}
+# node设置设置淘宝镜像
+2017-08-05
 ------
 
 最近一直遇到npm install 报错，报错信息显示与phantomjs有关

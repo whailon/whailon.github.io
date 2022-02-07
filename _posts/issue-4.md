@@ -1,9 +1,5 @@
----
-layout: default
-title: yii2 框架GridView使用小技巧
----
-#### {{ page.title }}
-{{ page.date | date: "%Y-%m-%d" }}
+# yii2 框架GridView使用小技巧
+2017-07-25
 ------
 
 在yii2框架中GridView组件使用的频率很高，常用于数据列渲染。其中很重要的一个
