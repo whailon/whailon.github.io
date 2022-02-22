@@ -16,8 +16,6 @@
     <!-- <script>eruda.init();</script> -->
     <!-- 公众号 JSSDK -->
     <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
-    <!-- 云开发 Web SDK -->
-    <script src="https://res.wx.qq.com/open/js/cloudbase/1.1.0/cloud.js"></script>
     <script>
       function docReady(fn) {
         if (document.readyState === 'complete' || document.readyState === 'interactive') {
@@ -73,16 +71,16 @@
           var containerEl = document.getElementById('public-web-container')
           containerEl.classList.remove('hidden')
           containerEl.classList.add('full', 'public-web-container')
-          var c = new cloud.Cloud({
-            // 必填，表示是未登录模式
-            identityless: true,
-            // 资源方 AppID
-            resourceAppid: 'wx610775c4001f6822', // <!-- replace -->
-            // 资源方环境 ID
-            resourceEnv: 'uni8108a49', // <!-- replace -->
-          })
-          await c.init()
-          window.c = c
+          // var c = new cloud.Cloud({
+          //   // 必填，表示是未登录模式
+          //   identityless: true,
+          //   // 资源方 AppID
+          //   resourceAppid: 'wx610775c4001f6822', // <!-- replace -->
+          //   // 资源方环境 ID
+          //   resourceEnv: 'uni8108a49', // <!-- replace -->
+          // })
+          // await c.init()
+          // window.c = c
 
           var buttonEl = document.getElementById('public-web-jump-button')
           var buttonLoadingEl = document.getElementById('public-web-jump-button-loading')
@@ -100,17 +98,17 @@
       })
 
       async function openWeapp(onBeforeJump) {
-        var c = window.c
-        const res = await c.callFunction({
-          name: 'public',
-          data: {
-            action: 'getUrlScheme',
-          },
-        })
-        console.warn(res)
-        if (onBeforeJump) {
-          onBeforeJump()
-        }
+        // var c = window.c
+        // const res = await c.callFunction({
+        //   name: 'public',
+        //   data: {
+        //     action: 'getUrlScheme',
+        //   },
+        // })
+        // console.warn(res)
+        // if (onBeforeJump) {
+        //   onBeforeJump()
+        // }
         // location.href = res.result.openlink
         location.href = "weixin://dl/business/?t=fvhV7kTGnvs"
       }
